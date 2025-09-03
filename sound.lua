@@ -1,19 +1,19 @@
+local soundPath = "Interface/AddOns/WowVision/audio/sound"
+
 local pack = WowVision.audio.AudioPack:new({
     key = "WowVision",
     label = "WowVision",
+    filePath = soundPath
 })
 
 local root = pack:getDirectory()
-local rootPath = "Interface/AddOns/WowVision/audio/sound/"
 
 local alerts = root:addSubdirectory({
     key = "alerts",
     label = "alerts"
 })
 
-local alertPath = rootPath .. "alerts/"
-
-alertFiles = {
+alerts:addFiles({
     "beep.mp3",
     "brass1.mp3",
     "brass2.mp3",
@@ -28,18 +28,10 @@ alertFiles = {
     "glass5.mp3",
     "start_small.mp3",
     "stop_small.mp3"
-}
-for i=1,27 do
-    tinsert(alertFiles, "notification" .. i .. ".mp3")
-end
+})
 
-for _, v in ipairs(alertFiles) do
-    local path = alertPath .. v
-    alerts:addEntry({
-        key = v,
-        label = v,
-        value = path
-    })
+for i=1,27 do
+    alerts:addFile("notification" .. i .. ".mp3")
 end
 
 local errors = root:addSubdirectory({
@@ -47,9 +39,7 @@ local errors = root:addSubdirectory({
     label = "errors"
 })
 
-local errorPath = rootPath .. "errors/"
-
-local errorFiles = {
+errors:addFiles({
         "brang.mp3",
     "bring.mp3",
     "dang.mp3",
@@ -58,14 +48,6 @@ local errorFiles = {
     "spoing.mp3",
     "swoosh.mp3",
     "tsching.mp3",
-}
-
-for _, v in ipairs(errorFiles) do
-    errors:addEntry({
-        key = v,
-        label = v,
-        value = errorPath .. v
-    })
-end
+})
 
 WowVision.audio:registerPack("Sound", pack)
