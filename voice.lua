@@ -1,5 +1,5 @@
 WowVision.audio:registerVoicePack({
-    key = "default",
-    label = "default",
-    filePath = "Interface/AddOns/WowVision/audio/voice/default"
+    key = "Matthew",
+    label = "Matthew",
+    filePath = "Interface/AddOns/WowVision/audio/voice/Matthew"
 })
