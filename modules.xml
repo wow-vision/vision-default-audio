@@ -3,5 +3,6 @@
 
   <Script file="sound.lua" />
   <Script file="voice.lua" />
+  <Script file="beacons.lua" />
 
 </Ui>
