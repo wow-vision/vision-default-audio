@@ -95,4 +95,15 @@ notes:addFiles({
     "synth_61_c7.mp3",
 })
 
+local falling = root:addSubdirectory({
+    key = "falling",
+    label = "falling",
+})
+
+local fallingFiles = {}
+for i = 1, 99 do
+    fallingFiles[i] = string.format("fall_sound-%02d.mp3", i)
+end
+falling:addFiles(fallingFiles)
+
 WowVision.audio:registerPack("Sound", pack)
