@@ -21,6 +21,8 @@ alerts:addFiles({
     "brass4.mp3",
     "brass5.mp3",
     "chat.mp3",
+    "chatbox_close.mp3",
+    "chatbox_open.mp3",
     "clack.mp3",
     "clack_fast.mp3",
     "click.mp3",
