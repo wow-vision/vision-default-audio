@@ -10,5 +10,6 @@ pack:addBeacon({ key = "Notification_soft_100", label = "Notification" })
 pack:addBeacon({ key = "probe_deep_1", label = "Probe (Deep)" })
 pack:addBeacon({ key = "probe_mid_1", label = "Probe (Mid)" })
 pack:addBeacon({ key = "steel_gong", label = "Steel Gong" })
+pack:addBeacon({ key = "beacon6", label = "Beacon 6" })
 
 WowVision.audio:registerPack("Beacon", pack)
