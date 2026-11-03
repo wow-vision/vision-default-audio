@@ -20,6 +20,8 @@ alerts:addFiles({
     "brass3.mp3",
     "brass4.mp3",
     "brass5.mp3",
+    "cc-off.mp3",
+    "cc-on.mp3",
     "chat.mp3",
     "chatbox_close.mp3",
     "chatbox_open.mp3",
